@@ -6,8 +6,10 @@ function Home({ colors }) {
 			<header className='header-background'>
 				<div className='header-text'>
 					<p>Welcome to the color factory</p>
-					<button>
-						<Link to='/color/new'>Add Color</Link>
+					<button className='header-button'>
+						<Link className='color-link' to='/color/new'>
+							Add Color
+						</Link>
 					</button>
 				</div>
 			</header>

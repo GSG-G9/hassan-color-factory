@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BlockPicker } from 'react-color';
+import { CirclePicker } from 'react-color';
 import './style.css';
 class AddColorPage extends Component {
 	state = {
@@ -11,6 +11,7 @@ class AddColorPage extends Component {
 		this.setState({ colorName: e.target.value });
 	};
 	handleColorValue = (e) => {
+		console.log(e);
 		this.setState({ colorValue: e.hex });
 	};
 
@@ -21,9 +22,10 @@ class AddColorPage extends Component {
 					className='add-color-page-form'
 					onSubmit={(event) => {
 						event.preventDefault();
+						console.log(event.target);
 						this.props.changeColor(
 							event.target[0].value,
-							event.target[1].value
+							this.state.colorValue
 						);
 						return this.props.history.push('/colors');
 					}}
@@ -39,7 +41,7 @@ class AddColorPage extends Component {
 						/>
 					</div>
 					<div className='add-color-page-block-picker'>
-						<BlockPicker
+						<CirclePicker
 							color={this.state.colorValue}
 							onChange={this.handleColorValue}
 						/>

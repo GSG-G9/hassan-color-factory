@@ -11,14 +11,15 @@ class App extends Component {
 	state = {
 		colors: [
 			{ name: 'red', value: '#FF0000' },
-			{ name: 'blue', value: '#00FF00' },
-			{ name: 'green', value: '#0000FF' },
+			{ name: 'blue', value: '#0000FF' },
+			{ name: 'green', value: '#00FF00' },
 		],
 	};
 
 	changeColor = (colorName, colorValue) => {
+		console.log(colorValue);
 		this.setState((prevState) => ({
-			colors: [...prevState.colors, { name: colorName, value: colorValue }],
+			colors: [{ name: colorName, value: colorValue }, ...prevState.colors],
 		}));
 	};
 	render() {
