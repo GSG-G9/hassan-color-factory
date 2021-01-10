@@ -1,6 +1,6 @@
 # Color Factory
 
-## [Live Demo](https://hopeful-wright-de5848.netlify.app/color)
+## [Live Demo](https://5ffb2c75d9ccad0007bac9d5--hopeful-wright-de5848.netlify.app/color)
 
 **User Stories**.
 
