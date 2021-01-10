@@ -1,0 +1,17 @@
+.add-color-page-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.add-color-page-color-name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.add-color-page-block-picker {
+	padding: 20px;
+}
