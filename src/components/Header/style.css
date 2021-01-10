@@ -1,0 +1,38 @@
+.header,
+.header-background,
+.header-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.header-background {
+	padding: 1rem 0;
+	background-color: rgb(0, 0, 0, 0.2);
+	width: 100%;
+	box-shadow: 2px 0px 2px #000;
+}
+
+.header-text {
+	gap: 10px;
+}
+
+.header-select-color {
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.header-ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	list-style-type: none;
+}
+
+.color-link {
+	text-decoration: none;
+}
